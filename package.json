@@ -12,8 +12,7 @@
     "express": "^4.17.1"
   },
   "repository": {
-      "type": "git",
-      "url": "http://github.com/charliemitchell/basic-auth-static-server.git"
-   }
+    "type": "git",
+    "url": "http://github.com/charliemitchell/basic-auth-static-server.git"
+  }
 }
-
