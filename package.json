@@ -1,6 +1,6 @@
 {
   "name": "basic-auth-static-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,12 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "serve": "./bin/serve.js"
   },
   "repository": {
     "type": "git",
