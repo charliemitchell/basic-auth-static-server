@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 
 const express = require('express');
+const path = require('path');
+const args = require('args')
 const app = express();
 const { BASIC_AUTH_USERNAME, BASIC_AUTH_PASSWORD, PORT, STATIC_INDEX_FILE = 'index.html' } = process.env
-
 const directory = process.argv.pop()
+
+args.option('single', 'Enable SPA mode', true)
+
+const flags = args.parse(process.argv)
 
 if (BASIC_AUTH_USERNAME && BASIC_AUTH_PASSWORD) {
   app.use(function (req, res, next) {
@@ -21,5 +26,11 @@ if (BASIC_AUTH_USERNAME && BASIC_AUTH_PASSWORD) {
 }
 
 app.use(express.static(directory, { 'index': STATIC_INDEX_FILE }));
+
+if (flags.single) {
+  app.use(function(req, res, next) {
+    res.sendFile(path.join(directory, STATIC_INDEX_FILE));
+  });
+}
 
 app.listen(PORT || 3000);

@@ -1,6 +1,6 @@
 {
   "name": "basic-auth-static-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Charlie Mitchell <charliesemailis@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "args": "^5.0.1",
     "express": "^4.17.1"
   },
   "files": [
