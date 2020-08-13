@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const express = require('express');
 const app = express();
 const { BASIC_AUTH_USERNAME, BASIC_AUTH_PASSWORD, PORT, STATIC_INDEX_FILE = 'index.html' } = process.env
