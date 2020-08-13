@@ -20,4 +20,4 @@ No environmanet variables are needed for this to work, however...
 
 ---
 
-When there is no Basic Auth variables set, the server will not implment it
+When there is no Basic Auth variables set, the server will not implement it
