@@ -4,7 +4,7 @@ Usage `npx basic-auth-static-server /path/to/your/static-website`
 
 Everything is based on environment variables, works out of the box with heroku.
 
-No environmanet variables are needed for this to work, however...
+No environment variables are needed for this to work, however...
 
 ### In order to use Basic Auth you need to set the following.
 
