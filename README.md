@@ -16,3 +16,8 @@ No environment variables are needed for the static server to work.
 `STATIC_INDEX_FILE` is optional, default is `index.html`
 
 `PORT` is optional, default is 3000
+
+---
+
+#### Options:
+  `--single` Enables SPA mode by always serving your index file.
